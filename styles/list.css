@@ -1,0 +1,24 @@
+body{
+    height: 100%;
+    width : 100%;
+}
+
+#entirediv{
+    height: 100%;
+    width: 100%;
+}
+
+#top{
+    height: 60px;
+    width: 60px;
+}
+
+.hotelimage{
+    height: 250px;
+    width: 250px;
+}
+
+.socialmedia{
+    height: 20px;
+    width: 22px;
+}
