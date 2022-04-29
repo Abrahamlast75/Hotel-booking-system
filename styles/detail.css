@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width : 100%;
+    background-color: #e0e0e0;
+    margin: 0px;
 }
 
 #entirediv{
@@ -16,9 +18,28 @@ body{
 #hotelimage{
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0% 4%;
 }
 
 .socialmedia{
     height: 20px;
     width: 22px;
+}
+
+header{
+    background-color: rosybrown;
+}
+
+footer{
+    background-color: rosybrown;
+}
+#bookingdetails{
+    margin :0% 4% 1% 4% ;
+}
+#hotelservices{
+    margin : 1% 4% 2% 4% ;
+}
+
+#ltd   {
+    margin:0%
 }

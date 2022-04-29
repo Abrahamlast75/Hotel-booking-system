@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width : 100%;
+    background-color: #e0e0e0;
+    margin: 0px;
 }
 
 #entirediv{
@@ -21,4 +23,39 @@ body{
 .socialmedia{
     height: 20px;
     width: 22px;
+}
+
+#ltd{
+    margin:0%
+}
+
+header{
+    background-color: rosybrown;
+    margin-bottom: 2%;
+}
+
+footer{
+    background-color: rosybrown;
+}
+
+#hoteladdress{
+
+    margin:auto;
+    background-color: rgb(132,136,139);
+    width:50%;
+    height:20%
+    
+}
+
+#customerdetails{
+    margin: 2%;
+}
+
+#amountdetails{
+     
+   margin:2%; 
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 1% 2% 1% 2% ;
+ 
 }
