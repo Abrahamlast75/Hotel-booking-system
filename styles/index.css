@@ -3,6 +3,8 @@ body{
     width : 100%;
     background-color: #e0e0e0;
     margin: 0px;
+    font-family:  Ubuntu, sans-serif;
+
 }
 
 #entirediv{
@@ -13,6 +15,7 @@ body{
 #top {
     height: 60px;
     width: 60px;
+    
 }
 
 .cityimage{
@@ -28,11 +31,37 @@ body{
 
 header{
     background-color: rosybrown;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding-right: 1%;
+    
 }
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
 
 footer{
     background-color: rosybrown;
+    position: sticky;
+    bottom: 0px;
+
 }
+#contact {
+    display: flex;
+    align-self: flex-start; 
+    justify-content: space-between;
+      padding-top: 1%;
+     
+}
+
 
 #city{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -40,7 +69,11 @@ footer{
     background-position: center center ;
     background-size: cover;
     height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #image{
     
@@ -66,7 +99,7 @@ footer{
 
 #image2{
    
-    border-radius: 10%;
+    border-radius: 15%;
     padding: 4%;
     margin: 15%;
 }
@@ -75,7 +108,7 @@ footer{
 #image3{
     
    
-    border-radius: 10%;
+    border-radius: 15%;
     padding: 4%;
     margin: 15%;
 }
@@ -84,11 +117,32 @@ footer{
 #image4{
   
    
-    border-radius: 10%;
+    border-radius: 15%;
     padding: 4%;
     margin: 15%;
 }
 
 #ltd{
+    display: flex;
+    justify-content: center;
     margin:0%
+    
+}
+
+#cityname{
+
+    
+    width :400px;
+    background-color:  #f1f1f1;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+
+#visit{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
 }

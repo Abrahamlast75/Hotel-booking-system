@@ -27,17 +27,25 @@ body{
 
 header{
     background-color: rosybrown;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding-right: 1%;
 }
 
 footer{
     background-color: rosybrown;
+
+    position: sticky;
+    bottom: 0px;
 }
 
 #list1{
     margin :2%;
     background-color: rgb(132,136,139);
     width: 40%;
-
 }
 
 #list2{
@@ -51,9 +59,56 @@ footer{
     margin :2%;
     background-color: rgb(132,136,139);
     width: 40%;
+   
+    
+
 
 }
 
 #ltd{
-    margin:0%
+    margin:0%;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+   
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    /* justify-content: space-evenly; */
+    column-gap: 80px;
+    font-weight: bold;   
+}
+
+#imagelist{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#third{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 4%;
+    width: 100%;
+}
+
+#map{
+    display: none;
+}
+
+#contact {
+    display: flex;
+    align-self: flex-start; 
+    justify-content: space-between;
+      padding-top: 1%;
+
 }
