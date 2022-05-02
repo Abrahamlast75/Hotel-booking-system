@@ -1,85 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Detail</title>
-    <link rel="stylesheet" href="styles/detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
-<body>
-     <div id="entirediv" >
-       <!-- header -->
-       <header>
-        <a href="index.html"> <img id="top"  src="assests/images/logo.png" alt="logo" /></a>
-          <a href="login.html" target="blank">Login</a>
-       </header>
-           <!-- content -->
-        
 
-           <div id="contentDiv">
-            <div class="detailDiv">
-              <div id="formImg">
-                <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison Blu Hotel">
-              </div>
-                <form id="form" action="payment.html">
-                  <div class="inputs">
-                    <label for="adults">Adults:</label>
-                    <input type="number" name="adults" id="" min="1" required>
-                  </div>
-                  <div class="inputs">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="" required>
-                  </div>
-                  <div class="inputs">
-                    <label for="fromDate">From Date:</label>
-                    <input type="date" name="fromDate" id="" required>
-                  </div>
-                  <div class="inputs">
-                    <label for="toDate">To Date:</label>
-                    <input type="date" name="toDate" id="" required>
-                  </div>
-                  <div class="inputs">
-                    <label for="total">Total:</label>
-                    <input type="text" name="" id="" readonly>
-                  </div>
-                  <div id="submitButton">
-                    <input type="submit" value="Book Now">
-                  </div>
-                </form>
-            </div> 
-            <div id="descriptionDiv">
-              <h2>Radison Blu Hotel</h2>
-              <p style="font-family: cursive;">RATING</p>
-              <p>5 Star</p>
-              <p style="font-family: cursive;">AMENITIES</p>
-              <ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>pool</li>
-              </ul>
-              <h5 style="font-family: cursive;">DESCRIPTION</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima sit accusantium
-                aut laudantium vel repellat, molestiae temporibus culpa voluptatum deleniti nobis eveniet
-                perferendis sed a, numquam sequi cumque quo!</p>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  
+  <title>Detail</title>
+</head>
+
+<body>
+  <div id="container">
+
+    <header>
+      <a href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo"></a>
+      <div id="loginDiv">
+        <button class="btn btn-light" data-toggle="modal" data-target="#login-modal" type="button">
+          Login
+        </button>
+      </div>
+    </header>
+   
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ">
+            <div style="margin: 4% 0;" class="d-flex justify-content-around">
+              <label for="username">Username:</label>
+              <input type="text" placeholder="Enter Username" name="username" id="username">
+            </div>
+            <div style="margin: 4% 0;" class="d-flex justify-content-around">
+              <label for="password">Password:</label>
+              <input type="password" placeholder="Enter Password" name="password" id="password">
             </div>
           </div>
-           <!-- footer -->
-         <footer>
-          <div id="contactDiv">
-            <a style="text-decoration: none;" href="contact.html">
-              <p style="color: #000;">Contact Us</p>
-            </a>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary">Login</button>
           </div>
-          <div id="copyrightDiv">
-            <p id="ltd">&copy; 2020 ROOM SEARCH PVT LTD</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div id="socialMediaDiv">
-            <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
-            <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+          <div class="modal-body ">
+              <p>Thank you for reaching out!!! <br> please enter your email and we will get back to you.</p>
+            <div  class="d-flex align-self-start align-items-baseline">
+              <label for="email">Email:</label>
+              <input type="email" placeholder="Enter your email id" name="email" id="email">
+            </div>
           </div>
-         </footer> 
-         </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contentDiv">
+      <div class="detailDiv">
+        <div id="formImg">
+          <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radison Blu Hotel">
+        </div>
+          <form id="form" action="payment.html">
+            <div class="inputs">
+              <label for="adults">Adults:</label>
+              <input type="number" name="adults" id="" min="1" required>
+            </div>
+            <div class="inputs">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="fromDate">From Date:</label>
+              <input type="date" name="fromDate" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="toDate">To Date:</label>
+              <input type="date" name="toDate" id="" required>
+            </div>
+            <div class="inputs">
+              <label for="total">Total:</label>
+              <input type="text" name="" id="" readonly>
+            </div>
+            <div id="submitButton">
+              <button type="submit" class="btn btn-outline-success">Book Now</button>
+            </div>
+          </form>
+      </div> 
+      <div id="descriptionDiv">
+        <h2>Radison Blu Hotel</h2>
+        <p style="font-family: cursive;">RATING</p>
+        <p>5 Star</p>
+        <p style="font-family: cursive;">AMENITIES</p>
+        <ul>
+          <li>Room service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>pool</li>
+        </ul>
+        <h5 style="font-family: cursive;">DESCRIPTION</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima sit accusantium
+          aut laudantium vel repellat, molestiae temporibus culpa voluptatum deleniti nobis eveniet
+          perferendis sed a, numquam sequi cumque quo!</p>
+      </div>
+    </div>
+
+    <footer>
+      <div id="contactDiv">
+          <button data-toggle="modal" data-target="#contact-modal" class="btn btn-info"><p id="contactBtn" style="color: #000;">Contact Us</p></button>
+      </div>
+      <div id="copyrightDiv">
+        <p id="copyright">&copy; 2020 ROOM SEARCH PVT LTD</p>
+      </div>
+      <div id="socialMediaDiv">
+        <a href="https://www.facebook.com" target="_blank"><img class="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+      </div>
+    </footer>
+
+
+  </div>
 </body>
+
 </html>
