@@ -32,37 +32,44 @@ header{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding-right: 1%;
+    padding-right: 1.5%;
+    padding-left: 1%;
 }
 
 footer{
     background-color: rosybrown;
-
     position: sticky;
     bottom: 0px;
+    padding-left: 2%;
+    padding-right: 1%;
 }
 
 #list1{
     margin :2%;
-    background-color: rgb(132,136,139);
+    background-color: rgb(132,136,139,0.3);
     width: 40%;
+    display: flex;
+    justify-content: flex-start;
+
+    
+    
 }
 
 #list2{
     margin :2%;
-    background-color: rgb(132,136,139);
+    background-color: rgb(132,136,139,0.3);
     width: 40%;
-
+    display: flex;
+    justify-content: flex-start;
 }
 
 #list3{
     margin :2%;
-    background-color: rgb(132,136,139);
+    background-color: rgb(132,136,139,0.3);
     width: 40%;
+    display: flex;
+    justify-content: flex-start;
    
-    
-
-
 }
 
 #ltd{
@@ -107,8 +114,9 @@ ul{
 
 #contact {
     display: flex;
-    align-self: flex-start; 
+    align-self: center; 
     justify-content: space-between;
       padding-top: 1%;
+      padding-bottom: 1%;
 
 }

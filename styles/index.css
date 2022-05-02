@@ -36,7 +36,8 @@ header{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding-right: 1%;
+    padding-right: 1.5%;
+    padding-left: 1%;
     
 }
 
@@ -52,13 +53,16 @@ footer{
     background-color: rosybrown;
     position: sticky;
     bottom: 0px;
+    padding-left: 2%;
+    padding-right: 1%;
 
 }
 #contact {
     display: flex;
-    align-self: flex-start; 
+    align-self: center; 
     justify-content: space-between;
       padding-top: 1%;
+      padding-bottom: 1%;
      
 }
 
@@ -77,31 +81,32 @@ footer{
 
 #image{
     
-    width: 300px;
-    margin: auto;
-    justify-content:center ;
+    /* width: 300px;
+    margin: auto; */
+    justify-content:space-evenly;
      display: flex;
 }
 
 #imagelink{
-  
-    margin: 15%;
     border-radius:10%;
+    /* margin: 15%;
     padding: 4%;
-    
+     */
 }
 
 #image1{
    
     border-radius: 10%;
+    box-shadow: 10px 10px 10px 0 grey;
     
 }
 
 #image2{
    
     border-radius: 15%;
-    padding: 4%;
-    margin: 15%;
+    box-shadow: 10px 10px 10px 0 grey;
+    /* padding: 4%;
+    margin: 15%; */
 }
 
 
@@ -109,8 +114,9 @@ footer{
     
    
     border-radius: 15%;
-    padding: 4%;
-    margin: 15%;
+    box-shadow: 10px 10px 10px 0 grey;
+    /* padding: 4%;
+    margin: 15%; */
 }
 
 
@@ -118,8 +124,10 @@ footer{
   
    
     border-radius: 15%;
-    padding: 4%;
-    margin: 15%;
+    
+    box-shadow: 10px 10px 10px 0 grey;
+    /* padding: 4%;
+    margin: 15%; */
 }
 
 #ltd{
@@ -138,6 +146,7 @@ footer{
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
+    outline: none;
 }
 
 
@@ -146,3 +155,40 @@ footer{
     justify-content: center;
     padding-bottom: 2%;
 }
+
+
+/* Parent Container */
+.imagecontainer{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+   }
+   
+   /* Child Text Container */
+   .imagecontainer div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 35%;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+   
+   /* Hover on Parent Container */
+   .imagecontainer:hover{
+    cursor: pointer;
+   }
+   
+   .imagecontainer:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+   }
