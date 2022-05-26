@@ -1,3 +1,6 @@
+//_____________________________________________Header Template
+
+
 let headerTemplate = `<header>
 <a id="logoAnchor" href="index.html"><img id="logo" src="./assests/images/logo.png" height="150px" width="160px" alt="Logo"></a>
 <div id="loginDiv">
@@ -33,3 +36,15 @@ let footerTemplate = `<footer>
 
 document.getElementById("container").innerHTML = headerTemplate + document.getElementById("container").innerHTML;
 document.getElementById("container").innerHTML = document.getElementById("container").innerHTML+ footerTemplate;
+
+
+// ___________________________________________________Login State 
+
+function restoreLogin(){
+  document.querySelector("#headerLoginBtn").innerText="LOGOUT";
+  document.querySelector("#headerLoginBtn").dataset.toggle = "modal hide";
+}
+
+if(localStorage.getItem('loginState')==="true"){
+restoreLogin();  
+}

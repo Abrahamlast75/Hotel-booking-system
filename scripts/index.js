@@ -7,6 +7,8 @@ document.querySelector("#logoAnchor").style.pointerEvents = "none";
 
 // ______________________________________________Login and Logout functionality
 
+var loginState = false;
+
 document.querySelector("#loginModalBtn").addEventListener("click", function(){
     login();
 })
@@ -23,10 +25,11 @@ function login(){
     localStorage.setItem('password', document.querySelector("#password").value);
     if(document.querySelector("#headerLoginBtn").innerText==="LOGIN" && localStorage.getItem('username')==="admin" && localStorage.getItem('password')==="admin"){
         document.querySelector("#headerLoginBtn").innerText="LOGOUT";
-        alert("successfully Logged IN");
+        alert("successfully LoggedIn");
         document.querySelector("#loginModalClose").click();
         document.querySelector("#headerLoginBtn").dataset.toggle = "modal hide";
     }
+    localStorage.setItem('loginState', 'true');
 }
 function logout(){
         localStorage.clear();
