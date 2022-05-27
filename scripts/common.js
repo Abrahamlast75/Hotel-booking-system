@@ -48,3 +48,10 @@ function restoreLogin(){
 if(localStorage.getItem('loginState')==="true"){
 restoreLogin();  
 }
+
+
+
+let disableLoader = () => {
+    document.getElementById("loader").style.visibility = "hidden";
+    document.getElementsByTagName("body")[0].style.visibility = "visible";
+}
